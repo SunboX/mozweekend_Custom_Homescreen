@@ -90,11 +90,7 @@ function createIcon(app) {
   appEl.appendChild(appNameEl);
 
   appEl.onclick = function() {
-    if (entryKey) {
-      app.launch(entryKey);
-    } else {
-      app.launch();
-    }
+    app.launch();
   }
 
   return appEl;
